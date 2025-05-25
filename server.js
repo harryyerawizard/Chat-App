@@ -11,8 +11,6 @@ app.use(express.json());
 app.use(express.static(__dirname + '/public'));
 
 // Connect to MongoDB Atlas
-const mongoURI = 'mongodb+srv://amandaborson56:Adatabase1@cluster0.myeqr0r.mongodb.net/chatapp?retryWrites=true&w=majority';
-mongoose
   .connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('Connected to MongoDB Atlas'))
   .catch(error => console.log('Error connecting to MongoDB Atlas:', error));
